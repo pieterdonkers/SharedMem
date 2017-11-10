@@ -72,6 +72,78 @@ declare class Runner {
     getSelectedEngineName(id: number): string;
     getEngineByName(name: string, id: number): IThreadEngine;
 }
+declare class ProgrammedEngine1 implements IThreadEngine {
+    private threadID;
+    constructor(ThreadID: number);
+    static getDescription(): string;
+    GetActions(state: GameState): ThreadAction[];
+}
+declare class ProgrammedEngine2 implements IThreadEngine {
+    private threadID;
+    constructor(ThreadID: number);
+    static getDescription(): string;
+    GetActions(state: GameState): ThreadAction[];
+}
+declare class ProgrammedEngine3 implements IThreadEngine {
+    private threadID;
+    constructor(ThreadID: number);
+    static getDescription(): string;
+    GetActions(state: GameState): ThreadAction[];
+}
+declare class HelperClass {
+    static nearestEnemy(state: GameState, curCell: Cell, owner: number): Cell;
+    static cellDistance(cellA: Cell, cellB: Cell): number;
+    static attackDirection(cellA: Cell, cellB: Cell, state: GameState): Cell;
+    static gain(points: number): number;
+}
+declare var deepqlearn: any;
+declare var brain: any;
+declare class previousStats {
+    myCellCount: number;
+    opCellCount: number;
+    myTotal: number;
+    opTotal: number;
+    constructor();
+}
+declare class AIEngine1 implements IThreadEngine {
+    private threadID;
+    private previousStats;
+    constructor(ThreadID: number);
+    static getDescription(): string;
+    private even;
+    GetActions(state: GameState): ThreadAction[];
+    Surrounding(state: GameState, row: number, col: number): Cell[];
+    cellsToNumberArray(cells: Cell[]): number[];
+    pieter(cells: Cell[], currentCell: Cell): number;
+    sigmoid(t: number): number;
+    decodeAction(action: number, cell: Cell, state: GameState): ThreadAction;
+}
+declare class AIEngine2 implements IThreadEngine {
+    private threadID;
+    private previousStats;
+    constructor(ThreadID: number);
+    static getDescription(): string;
+    private even;
+    GetActions(state: GameState): ThreadAction[];
+    Surrounding(state: GameState, row: number, col: number): number[];
+    cellsToNumberArray(cells: Cell[]): number[];
+    sigmoid(t: number): number;
+    decodeAction(action: number, cell: Cell, state: GameState): ThreadAction;
+}
+declare class AIEngine3 implements IThreadEngine {
+    private threadID;
+    private previousStats;
+    constructor(ThreadID: number);
+    static getDescription(): string;
+    private even;
+    GetActions(state: GameState): ThreadAction[];
+    Surrounding(state: GameState, row: number, col: number): number[];
+    cellsToNumberArray(cells: Cell[]): number[];
+    sigmoid(t: number): number;
+    decodeAction(action: number, cell: Cell, state: GameState): ThreadAction;
+}
+declare var deepqlearn: any;
+declare var brain: any;
 declare class SimpleEngine implements IThreadEngine {
     private threadID;
     constructor(ThreadID: number);

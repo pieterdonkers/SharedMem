@@ -141,6 +141,10 @@ class Runner {
             //this.output();
             if (this.sim.state.winner != 0) {
                 this.stop();
+                //var el = document.getElementById('output');
+                //var runner = new Runner(el);
+                //runner.start();
+                document.getElementById("slider").setAttribute("max", (this.sim.state.round).toString());
             }
         }, 10);
     }
@@ -158,6 +162,7 @@ class Runner {
 
     stop() {
         clearTimeout(this.timerToken);
+        document.getElementById("slider").setAttribute("max", (this.sim.state.round).toString());
     }
 
     getSelectedEngineName(id: number): string {
@@ -170,7 +175,13 @@ class Runner {
             return new SimpleEngine(id);
         }
         if (name == "v2") {
-            return new SampleEngine(id);
+            return new ProgrammedEngine1(id);
+        }
+        if (name == "v3") {
+            return new ProgrammedEngine2(id);
+        }
+        if (name == "v4") {
+            return new ProgrammedEngine3(id);
         }
         return null;
     }

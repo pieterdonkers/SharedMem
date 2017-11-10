@@ -1,5 +1,6 @@
 ﻿using SharedMemLib;
 using System;
+using System.Diagnostics;
 using System.Linq;
 
 namespace ThreadSample1
@@ -12,6 +13,7 @@ namespace ThreadSample1
         static void Main(string[] args)
         {
 
+            Debugger.Launch();
 
             //First line contains integers of [Dimension] [Your ThreadID 1 or 2] [  
             var inputs = Console.ReadLine().Split(' ');

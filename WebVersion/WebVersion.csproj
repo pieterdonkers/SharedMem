@@ -34,6 +34,8 @@
     <Content Include="packages.config" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\convnet-min.js" />
+    <Content Include="Scripts\deepqlearn.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -61,6 +63,8 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\util.js" />
+    <Content Include="Scripts\vis.js" />
     <Content Include="web.config" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
@@ -76,6 +80,8 @@
     <TypeScriptCompile Include="Code\Cell.ts" />
     <TypeScriptCompile Include="Code\GameState.ts" />
     <TypeScriptCompile Include="Code\IThreadEngine.ts" />
+    <TypeScriptCompile Include="Code\ProgrammedEngine.ts" />
+    <TypeScriptCompile Include="Code\AIEngine.ts" />
     <TypeScriptCompile Include="Code\SampleEngine.ts" />
     <TypeScriptCompile Include="Code\Simulator.ts" />
     <TypeScriptCompile Include="Code\ThreadAction.ts" />
@@ -102,7 +108,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>15669</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

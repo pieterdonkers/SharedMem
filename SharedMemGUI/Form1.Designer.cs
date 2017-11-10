@@ -93,7 +93,7 @@
             this.toolStripButton2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0);
             this.toolStrip1.Size = new System.Drawing.Size(758, 39);
             this.toolStrip1.TabIndex = 6;
             this.toolStrip1.Text = "toolStrip1";
@@ -108,7 +108,8 @@
             // 
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Size = new System.Drawing.Size(227, 39);
-            this.toolStripTextBox1.Text = "D:\\Development\\CodeComp\\SharedMem\\ThreadSample1\\bin\\Debug\\ThreadSample1.exe";
+            this.toolStripTextBox1.Text = "C:\\Users\\Pieter Donkers\\Documents\\Visual Studio 2015\\Projects\\SharedMem\\ThreadSam" +
+    "ple1\\bin\\Debug\\ThreadSample1.exe";
             // 
             // toolStripButton1
             // 
@@ -151,7 +152,7 @@
             // toolStripTextBox6
             // 
             this.toolStripTextBox6.Name = "toolStripTextBox6";
-            this.toolStripTextBox6.Size = new System.Drawing.Size(52, 39);
+            this.toolStripTextBox6.Size = new System.Drawing.Size(36, 39);
             // 
             // toolStripButton2
             // 
@@ -179,7 +180,7 @@
             this.toolStripButton4});
             this.toolStrip2.Location = new System.Drawing.Point(0, 39);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.toolStrip2.Padding = new System.Windows.Forms.Padding(0);
             this.toolStrip2.Size = new System.Drawing.Size(758, 39);
             this.toolStrip2.TabIndex = 7;
             this.toolStrip2.Text = "toolStrip2";
@@ -194,7 +195,8 @@
             // 
             this.toolStripTextBox3.Name = "toolStripTextBox3";
             this.toolStripTextBox3.Size = new System.Drawing.Size(227, 39);
-            this.toolStripTextBox3.Text = "D:\\Development\\CodeComp\\SharedMem\\ThreadSample1\\bin\\Debug\\ThreadSample1.exe";
+            this.toolStripTextBox3.Text = "C:\\Users\\Pieter Donkers\\Documents\\Visual Studio 2015\\Projects\\SharedMem\\ThreadTry" +
+    "out\\bin\\Debug\\ThreadTryout.exe";
             // 
             // toolStripButton3
             // 
@@ -237,7 +239,7 @@
             // toolStripTextBox5
             // 
             this.toolStripTextBox5.Name = "toolStripTextBox5";
-            this.toolStripTextBox5.Size = new System.Drawing.Size(52, 39);
+            this.toolStripTextBox5.Size = new System.Drawing.Size(36, 39);
             // 
             // toolStripButton4
             // 

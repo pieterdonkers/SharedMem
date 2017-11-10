@@ -2,6 +2,8 @@
 /// <reference path="ThreadAction" />
 /// <reference path="GameState" />
 /// <reference path="Cell" />
+declare var deepqlearn: any; // Magic
+declare var brain: any;
 
 class SimpleEngine implements IThreadEngine {
 

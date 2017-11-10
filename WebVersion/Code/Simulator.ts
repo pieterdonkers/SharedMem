@@ -73,6 +73,9 @@ class Simulator {
 
         actions.forEach((action) => {
             c = this.state.GetCellByIndex(action.destIndex);
+            if (c == null) {
+                console.log(action)
+            };
             c.AddValue(action.count, action.threadID);
             touchedCells.push(c);
         });
